@@ -30,3 +30,12 @@ output.forEach(function (user) {
     ul.appendChild(li);
 });
 root.appendChild(ul);
+
+//filter() is used to create a new array with all elements that pass the test implemented by the provided function. It takes a callback function as an argument and returns a new array containing only the elements that satisfy the condition specified in the callback function.
+
+let arr = [1, 2, 3, 4, 5];
+arr.filter(function (num) {
+    return num & 1;
+}).forEach(function (num) {
+    console.log(num);
+});
