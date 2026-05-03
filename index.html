@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <script src="src/apr16table.js"></script>
+<body style="display: flex; justify-content: center;">
+    <div style="border: 1px solid black; padding: 1rem 2rem;" id="container">
+        <h2>Age Calculator</h2>
+        <label for="dob">Select your date of birth:</label><br>
+        <input type="date" id="dob"><br><br>
+        <button id="btn">Calculate</button>
+        <div id="msg"></div>
+    </div>
+    <script src="src/AgeCalculator.js"></script>
 </body>
 </html>
