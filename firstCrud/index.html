@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <style>
+        body {
+            background-color: rgb(228, 234, 240);
+        }
+        div {
+            background-color:rgb(82, 159, 214);
+            padding: 3rem;
+            width: 25%;
+            margin: auto;
+        }
+        table {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <div>
+        <label for="name">User Name</label>
+        <input type="text" name="" id="name"><br><br>
+        <label for="age">User Age</label>
+        <input type="number" name="" id="age"><br><br>
+        <label for="email">User Email</label>
+        <input type="email" name="" id="email"><br><br>
+
+        <button id="addUser">Add User</button>
+    </div>
+
+    <table frame="box" rules="all" width="700" style="margin:auto; margin-top: 5rem;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="firstCrud.js"></script>
+</body>
+</html>
