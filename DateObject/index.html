@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: rgb(205, 195, 195);
+        }
+        .header {
+            margin: auto;
+            margin-top: 1.2rem;
+            width: 95%;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(129, 177, 212);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            border: 1px solid rgb(153, 152, 152);
+            transition: 500ms;
+        }
+        .header:hover {
+            transform: translateY(-2px);
+            transition: 500ms;
+        }
+        hr {
+            width: 0.1px;
+            height: 50px;
+        }
+        .bi:hover {
+            cursor: pointer;
+        }
+        section {
+            width: 60%;
+            height: 70vh;
+            margin: auto;
+            margin-top: 4rem;
+            transition: 500ms;
+            border: 1px solid rgb(153, 152, 152);
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            transition: 500ms;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>  
+    <header class="header">
+        <div style="display: flex; margin: auto; list-style-type: none;">
+            <li style="background-color: orange; padding: 10px; border-radius: 40px; font-size: 25px;">SD</li>&nbsp;
+            <li style="font-weight: bold;">Sabir.dev<br><p style="font-weight: initial; font-size: 12px;margin-top: 0px;">keep building</p></li>
+        </div>
+        <hr>
+        <nav style="display: flex; gap: 30px; margin: auto; list-style-type: none;">
+            <li class="bi bi-house-door"> Home</li>
+            <li class="bi bi-grid"> Dashboard</li>
+            <li class="bi bi-graph-up-arrow"> Stats</li>
+            <li class="bi bi-person"> Profile</li>
+        </nav>
+        <hr>
+        <div id="date" style="list-style-type: none; display: flex; gap: 20px; font-family: monospace; margin: auto;">
+        </div>
+    </header>    
+    <section id="salutation">
+    </section>
+    <script src="test.js"></script>
+</body>
+</html>
