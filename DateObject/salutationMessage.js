@@ -8,7 +8,8 @@ let mm = now.getMonth();
 let yyyy = now.getFullYear();
 let hh = now.getHours();
 let meridiem = "AM";
-if (hh >= 12) {
+if (hh == 0) hh = 12;
+else if (hh >= 12) {
     meridiem = "PM";
     if (hh > 12) hh -= 12;
 }
@@ -32,15 +33,14 @@ h1.style = "";
 h4.style = "";
 let hour = now.getHours();
 let container = document.getElementById("salutation");
-hour = 20
 if (hour >= 5 && hour < 12) {
-    container.style = "background: no-repeat url('images/morning.png'); background-size: cover;";
+    container.style = "background: no-repeat url('../images/morning.png'); background-size: cover;";
     h1.textContent = "Good Morning! “Rise and Shine ☀️”";
     p.textContent = "Start your day with focus and positive energy.";
     h4.textContent = "“Fuel your dreams with consistency.”"
 }
 else if (hour >= 12 && hour < 17) {
-    container.style = "background: no-repeat url('images/afternoon.png'); background-size: cover;"
+    container.style = "background: no-repeat url('../images/afternoon.png'); background-size: cover;"
     h1.textContent = "Good Afternoon! “Stay Productive”";
     h1.style = "background-color: rgba(255, 255, 255, 0.5);";
     p.textContent = "A productive afternoon creates a successful evening.";
@@ -50,11 +50,15 @@ else if (hour >= 12 && hour < 17) {
 
 }
 else if (hour >= 17 && hour < 20) {
-    container.style = "background: no-repeat url('images/evening.png'); background-size: cover; color: white";
-    h1.textContent = "Good Evening!";
+    container.style = "background: no-repeat url('../images/evening.png'); background-size: cover; color: white";
+    h1.textContent = "Good Evening! “Slow Down & Reflect”";
+    p.textContent = "Take a moment to appreciate today's progress";
+    h4.textContent = "Sunset brings clarity";
 }
 else {
-    container.style = "background: no-repeat url('images/night.png'); background-size: cover; color: white";
-    h1.textContent = "Good Night!";
+    container.style = "background: no-repeat url('../images/night.png'); background-size: cover; color: white";
+    h1.textContent = "Good Night! “Time To Recharge”";
+    p.textContent = "The day is ending, but your journey continues tomorrow.";
+    h4.textContent = "“Dream big. Sleep well.”";
 }
 container.append(h1, p, h4);
